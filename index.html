@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>SafeEats | Know Where You're Eating</title>
+	  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  </head>
+
+  <body ng-controller="mainCtrl">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img class="brand"src="img/icon.png"></a>
+          <h1 class="navbar-text">SafeEats</h1>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Form Section -->
+    <div class="input__form">
+      <div class="container-fluid">
+        <div class="input__form--top">
+          <h3 class="input__form--top--h3">Enter Information</h3>
+          <div class="row">
+            <div class="col-md-6"><p>Restaurant:</p></div>
+            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="dba"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><p>Street Address:</p></div>
+            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="street"></div>
+          </div>
+          <div class="row" style="margin-bottom: 21px;">
+            <div class="col-md-6"><p>Zip Code:</p></div>
+            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="zip"></div>
+          </div>
+          <input class="input__form--top--submit" type="submit" value="enter">
+          <h3 style="color:#474747;font-weight:900;letter-spacing:1px;margin-top:30px;">Results:</h3>
+        </div>
+        <div class="input__form--bottom">
+          <div class="row">
+            <div class="col-md-4"><h4 class="input__form--bottom--h4">Score</h4></div>
+            <div class="col-md-4"><h4 class="input__form--bottom--h4">Grade</h4></div>
+            <div class="col-md-4"><h4 class="input__form--bottom--h4">Date</h3></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><h4><!--Score--></h4></div>
+            <div class="col-md-4"><h4><!--Grade--></h4></div>
+            <div class="col-md-4"><h4><!--Date--></h3></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <h5><a style="color:black;font-family:'Roboto', sans-serif;font-weight:500;letter-spacing:2px;" href="http://dylanterrell.com">© 2017 | www.dylanterrell.com</a></h5>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="mainCtrl.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+/*font-family: 'Roboto', sans-serif; --- font-weight: 300, 500, 900;*/
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 45px;
+}
+
+/* -- Navigation Bar -- */
+.navbar-default {
+  background-color: white !important;
+  border-bottom-color: black !important;
+  padding-bottom: 10px;
+}
+
+.brand {
+  width:auto;
+  height:55px;
+  margin-top:-5px;
+  padding-left: 15px;
+}
+
+.navbar-text {
+  font-weight: 300;
+  color: black !important;
+  letter-spacing: 3px;
+}
+
+/* -- border between navbar links --
+.navbar-right li {
+  border-right: solid;
+  border-width: .5px;
+  border-color: black;
+}*/
+
+.navbar-right li a {
+  color: black !important;
+  font-size: 20px;
+  margin-right: 16px;
+  margin-top: 27px !important;
+  padding-top: 0px !important;
+  font-weight: 500;
+  -webkit-transition: background-color .09s, padding-top .09s, margin-top .09s; /* Safari */
+    transition: background-color .09s, padding-top .09s, margin-top .09s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-right li a:hover {
+  color: #d5d3d3 !important;
+  padding-top: 7px !important;
+  margin-top: 17px !important;
+}
+
+/* -- Input Form -- */
+.input__form {
+  margin: auto;
+  margin-top: 45px !important;
+  text-align: center;
+  width: 450px;
+  height: auto;
+  background-color: #d5d3d3;
+  color: white;
+  letter-spacing: 2px;
+  display: block !important;
+  margin-bottom: 45px !important;
+}
+
+.input__form--top {
+  padding-top: 7px;
+}
+
+.input__form--top--h3 {
+  border-bottom: solid;
+  border-color:white;
+  border-width:2px;
+  padding-bottom: 5px;
+  margin-left: 92px;
+  margin-right: 92px;
+}
+.input__form--top p {
+  padding-top: 14px;
+  font-size: 18px;
+  text-align: right;
+  padding-left: 35px;
+}
+
+.input__form--top input {
+  color: black;
+  font-size:15px;
+  padding-left: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-left: -40px;
+}
+
+.input__form--top--submit {
+  background-color: #474747;
+  border: none !important;
+  border-radius: 3px;
+  color: white !important;
+  font-weight: 300 !important;
+  padding: 4px 20px 4px 20px !important;
+  margin: auto !important;
+}
+
+.input__form--bottom {
+  padding-top: 7px;
+  background-color: #474747;
+  width: 450px;
+  margin-left: -15px;
+  height: 150px;
+}
+
+.input__form--bottom--h4 {
+  border-bottom: solid;
+  border-color:white;
+  border-width:2px;
+  padding-bottom: 5px;
+  margin-left: 18px;
+  margin-right:18px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 45px;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
