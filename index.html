@@ -33,15 +33,15 @@
           <h3 class="input__form--top--h3">Enter Information</h3>
           <div class="row">
             <div class="col-md-6"><p>Restaurant:</p></div>
-            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="dba" style="text-transform:uppercase;"></div>
+            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="dba" ng-change="dba=dba.toUpperCase();"></div>
           </div>
           <div class="row">
             <div class="col-md-6"><p>Street Address:</p></div>
-            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="street" style="text-transform:uppercase;"></div>
+            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="street" ng-change="street=street.toUpperCase();"></div>
           </div>
           <div class="row" style="margin-bottom: 21px;">
             <div class="col-md-6"><p>Zip Code:</p></div>
-            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="zip" style="text-transform:uppercase;"></div>
+            <div class="col-md-6" style="margin-top: 12px;"><input type="text" ng-model="zip"></div>
           </div>
           <button class="input__form--top--submit" ng-click="eatify()">enter</button>
           <h3 style="color:#474747;font-weight:900;letter-spacing:1px;margin-top:30px;">Results:</h3>
@@ -53,16 +53,12 @@
             <div class="col-md-4"><h4 class="input__form--bottom--h4">Date</h3></div>
           </div>
           <div class="row">
-            <div class="col-md-4"><h4>{{info[0].score}} <!--Score--></h4></div>
-            <div class="col-md-4"><h4>{{info[0].grade}} <!--Grade--></h4></div>
-            <div class="col-md-4"><h4>{{info[0].grade_date}} <!--Date--></h3></div>
+            <div class="col-md-4"><h4> <!--Score-->{{info[0].score}}</h4></div>
+            <div class="col-md-4"><h4><!--Grade-->{{info[0].grade}}</h4></div>
+            <div class="col-md-4"><h4><!--Date-->{{info[0].grade_date}}</h3></div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div ng-bind="info">
-
     </div>
 
     <footer class="footer">
