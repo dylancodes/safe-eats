@@ -20,3 +20,19 @@ app.controller('mainCtrl', ['$scope', '$http', '$injector', function($scope, $ht
   }
 
 }]);
+
+app.filter("dateFilter", function() {
+    return function(item) {
+      var parts = item.split('/');
+      var newDate = new Date(parts[2], parts[0], parts[3]-1);
+      return newDate;
+    };
+  });
+
+app.filter("formatTime", function() {
+		return function(time) {
+    	 var newTime = parseInt(time);
+       return newTime - 12; 
+    };
+});
+
